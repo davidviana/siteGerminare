@@ -1,0 +1,55 @@
+body {
+    background: #000;
+}
+
+.container {
+    margin: 0 64px 0;
+    margin-top: 50px;
+    margin-bottom: 47px ;
+}
+
+header > img {
+    padding: 4px;
+}
+
+#container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.menu {
+    display: block;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.barras {
+    display: flex;
+    flex-direction: row;
+}
+
+.interagir {
+    width: 154px;
+    height: 8px;
+    background: #4335E7;
+    border: none;
+    border-radius: 5px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+#home-image {
+    width: 100%;
+}
