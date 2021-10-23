@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css/global.css">
-    <link rel="stylesheet" href="style.css/">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Página Inicial</title>
 </head>
@@ -18,17 +18,41 @@
     <header class="container">
             <div id = "container-menu">
                 <img src="assets/logo.png" alt="logo extendido na horizontal">
-                <p class = "menu">admissão</p>
-                <p class = "menu">acadêmico</p>
-                <p class = "menu">parcerias</p>
-                <p class = "menu">sobre nós</p>
-                <p class = "menu">contato</p>
+                <div class="barras">
+                    <label class = "menu" for="admissão">admissão</label>
+                    <div class ="interagir"></div>
+                </div>
+
+                <div class="barras">
+                    <label class = "menu" for="acadêmico">acadêmico</label>
+                    <div class ="interagir"></div>
+                </div>
+
+                <div class="barras">
+                    <label class = "menu" for="parcerias">parcerias</label>
+                    <div class ="interagir"></div>
+                </div>
+
+                <div class="barras">
+                    <label class = "menu" for="sobre nós">sobre nós</label>
+                    <div class ="interagir"></div>
+                </div>
+
+                <div class="barras">
+                    <label class = "menu" for="contato">contato</label>
+                    <div class ="interagir"></div>
+                </div>
                 <img class = "logo" src="assets/icone.png" alt="icone de usuário">
             </div>
     </header>
 
     <main>
-        <img id= "home-image" src="assets/home-image.png" alt="">
+        <section>
+            <img id= "home-image" src="assets/home-image.png" alt="imagem principal">
+            <div class = "texto-img">vagas abertas! admissão 2021/2022</div>
+            <button>inscreva-se já!</button>
+        </section>
+        
     </main>
 </body>
 
