@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    background: #1F1F1F;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #fff;
+}
+
+#logo {
+    width: 200px;
+}
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #1F1F1F;
+    height: 500px
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav  #myLink {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: #0E0E58;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.topnav a.icon:hover {
+    background: #C4C4C4;
+}
+
+
+.active {
+    background-color: #000000;
+    color: white;
+}
+
+.hint {
+    width: 154px;
+    height: 8px;
+    background: #4335E7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
