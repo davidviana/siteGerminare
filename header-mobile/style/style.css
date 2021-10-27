@@ -8,7 +8,11 @@ body {
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-    
+    transition: background 0.1s ease-in-out;
+}
+
+.text:hover{
+    background: #494949;
 }
 
 #logo {
@@ -34,8 +38,7 @@ body {
 }
 
 .topnav  #myLink {
-    display: none;
-    background: red;
+    display: none;  
 }
 
 .topnav a {
@@ -73,6 +76,12 @@ body {
     animation: anime 0.5s ease-in-out;
     padding: 200px;
     border-bottom: 1px solid #fff;
+    transition: background 0.5s ease-in-out;
+}
+
+.hidden-menu:hover {
+    background: rgba(14, 14, 83);
+    opacity: 70%;
 }
 
 #card-first {
@@ -95,23 +104,11 @@ body {
     display: none;
 }
 
-.hint {
-    width: 50px;
-    height: 8px;
-    background: #4335E7;
-    border: none;
-    border-radius: 5px;
-
-}
-
-.hint:hover{
-    animation: barras 0.5s ease;
-}
 
 
 @keyframes anime {
     from {
-        margin-bottom: 0.5%;
+        margin-bottom: 2%;
     }
     
     to {
