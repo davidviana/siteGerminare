@@ -1,39 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <script src="main.js" defer></script>
+    <title>Página Inicial</title>
 </head>
 
 <body>
     <div class="mobile-container">
         <div class="topnav">
-            <a id ="home" href="#home" class="active"><img id = "logo"src="assets/logo.png" alt="logo da germinare em tema branco"></a>
+            <a id="home" href="#" class="active"><img id="logo" src="assets/logo.png"
+                    alt="logo da germinare em tema branco"></a>
             <div id="myLinks">
-                <a class="text" href="javascript:void(0);" onclick="myFuntional()">admissão</a>
-                <div id ="myLink">
-                    <a href="#news">Rabuda</a>
-                    <a href="#">Tetuda</a>
-                    <a href="#">Gostosa</a>
+
+                <a class="text" href="#" onclick="abrirCardsFi()">admissão</a>
+                <div id ="card-first">
+                    <a class = "hidden-menu" href="#">Resultado</a>
+                    <a class = "hidden-menu" href="#">Etapas</a>
                 </div>
 
-                <a class="text" href="#contact">acadêmico</a>
-                <a class="text" href="#about">parcerias </a>
-                <a class="text" href="#news">sobre nós</a>
-                <a class="text" href="#contact">contato</a>
+                <a class="text" href="#" onclick="abrirCardsSe()">acadêmico</a>
+                <div id ="card-second">
+                    <a class = "hidden-menu" href="#">matérias de gestão</a>
+                    <a class = "hidden-menu" href="#">academias</a>
+                    <a class = "hidden-menu" href="#">congresso de marcas</a>
+                    <a class = "hidden-menu" href="#">pós-curso</a>
+                </div>
+
+                <a class="text" href="#" onclick="abrirCardsTh()">parcerias</a>
+                <div id ="card-third">
+                    <a class = "hidden-menu" href="#">parceiros</a>
+                    <a class = "hidden-menu" href="#">estágios</a>
+                    <a class = "hidden-menu" href="#">programa de supervisores</a>
+                </div>
+
+                <a class="text" href="#" onclick="abrirCardsFo()">sobre nós</a>
+                <div id ="card-fourth">
+                    <a class = "hidden-menu" href="#">nossas origens</a>
+                    <a class = "hidden-menu" href="#">nossa missão</a>
+                </div>
+
+                <a class="text" href="#" onclick="abrirCardsFiv()">contato</a>
+                <div id ="card-five">
+                    <a class = "hidden-menu" href="#">fale conosco</a>
+                    <a class = "hidden-menu" href="#">doações</a>
+                </div>
+
+                <a class="text" href="#">Portal do Aluno</a>
+
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="abrirCards()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </div>
 </body>
-
 </html>

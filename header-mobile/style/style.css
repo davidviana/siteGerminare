@@ -1,12 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 320px;
 }
 
 .text {
     background: #1F1F1F;
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
-    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    
 }
 
 #logo {
@@ -28,10 +30,12 @@ body {
 
 .topnav #myLinks {
     display: none;
+    background: #0E0E58;
 }
 
 .topnav  #myLink {
     display: none;
+    background: red;
 }
 
 .topnav a {
@@ -61,12 +65,56 @@ body {
     color: white;
 }
 
+.hidden-menu{
+    background-color: #0E0E58;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    background: #0E0E58;
+    animation: anime 0.5s ease-in-out;
+    padding: 200px;
+    border-bottom: 1px solid #fff;
+}
+
+#card-first {
+    display: none;
+}
+
+#card-second {
+    display: none;
+}
+
+#card-third {
+    display: none;
+}
+
+#card-fourth {
+    display: none;
+}
+
+#card-five {
+    display: none;
+}
+
 .hint {
-    width: 154px;
+    width: 50px;
     height: 8px;
     background: #4335E7;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in;
+
+}
+
+.hint:hover{
+    animation: barras 0.5s ease;
+}
+
+
+@keyframes anime {
+    from {
+        margin-bottom: 0.5%;
+    }
+    
+    to {
+        margin-bottom: 0%;
+    }
 }
