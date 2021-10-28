@@ -1,0 +1,27 @@
+#footer {
+    width: 320px;
+    background: #1C1365;
+    padding: 5px;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+#contact {
+    margin: 10px 10% 10px;
+    font-size: 8px;
+    text-transform: capitalize;
+    color: #fff ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
