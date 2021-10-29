@@ -1,6 +1,12 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 320px;
+    background-color: #000000;
+    width: 360px;
+    color: #fff;
+    font-family: "Montserrat";
+}
+
+#header {
+    width: 360px;
 }
 
 .text {
@@ -16,37 +22,36 @@ body {
 }
 
 #logo {
-    width: 200px;
+    width: 150px;
 }
 
 .mobile-container {
-    max-width: 480px;
+    width: 360px;
     margin: auto;
     background-color: #1F1F1F;
-    height: 500px
 }
 
 .topnav {
-    overflow: hidden;
+    width: 360px;
     background-color: #333;
     position: relative;
 }
 
 .topnav #myLinks {
     display: none;
-    background: #0E0E58;
-}
-
-.topnav  #myLink {
-    display: none;  
 }
 
 .topnav a {
+    display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
-    display: block;
+    font-size: 10px;
+}
+
+#hamgurber-menu {
+    font-size: 30px;
+    padding: 5px 5px ;
 }
 
 .topnav a.icon {
@@ -55,15 +60,20 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.1s ease-in-out;
 }
 
 .topnav a.icon:hover {
     background: #C4C4C4;
 }
 
+.icon {
+    width: 36px;
+    height: 36px ;
+}
 
 .active {
+    width: 360px;
     background-color: #000000;
     color: white;
 }
@@ -73,7 +83,6 @@ body {
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
     background: #0E0E58;
-    animation: anime 0.5s ease-in-out;
     padding: 200px;
     border-bottom: 1px solid #fff;
     transition: background 0.5s ease-in-out;
@@ -81,7 +90,7 @@ body {
 
 .hidden-menu:hover {
     background: rgba(14, 14, 83);
-    opacity: 70%;
+    opacity: 80%;
 }
 
 #card-first {
@@ -102,16 +111,4 @@ body {
 
 #card-five {
     display: none;
-}
-
-
-
-@keyframes anime {
-    from {
-        margin-bottom: 2%;
-    }
-    
-    to {
-        margin-bottom: 0%;
-    }
 }

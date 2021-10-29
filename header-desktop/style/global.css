@@ -1,84 +1,114 @@
-header {
-    background: #000;
+body {
+    background-color: #000;
 }
 
-.container {
+#header {
     display: flex;
     flex-direction: row;
-    margin: 0 60px 0;
-    margin-top: 50px;
-    margin-bottom: 47px ;
-}
-
-
-#container-menu {
-    display: flex;
     padding: 20px;
 }
 
-.menu {
+#logo {
+    width: 200px;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background: #000;
+}
+
+.container-menu a {
     display: block;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+    margin: auto 0;
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.text {
     color: #fff;
     text-transform: capitalize;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-a  {
-    text-decoration: none;
-    color: #fff;
-}
-.hidden-menu {
-    margin: 2px;
-    margin-top: 10px;
-    border: 1px solid red;
-    border-radius: 10px;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    background: #EF6421;
-    opacity: 90%;
-    padding: 10px;
-    transition: all 0.4s ease-in-out;
-}
-
-.first {
-    border-bottom: 1px solid #fff;
-    padding-bottom: 10px;
-}
-
-.next {
-    padding-top: 10px;
-}
-
-.bars {
-    margin-left: 10px;
-}
-
-.hint {
-    width: 154px;
-    height: 8px;
-    background: #4335E7;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s ease-in;
+    padding: 20px;
+    position: absolute;
+}
+
+
+.container-menu a.icon {
+    background: #0E0E58;
+    display: block;
+    right: 0;
+    top: 0;
+    transition: background 0.1s ease-in-out;
+}
+
+.container-menu a.icon:hover {
+    background: #C4C4C4;
 }
 
 .icon {
-    display: block;
-    margin: 0 auto;
-    padding-left: 90px;
-    width: 50px;
-    height: 50px;
+    width: 36px;
+    height: 36px ;
 }
 
-.logo {
-    width: 365px;
-    height: 84px;
+.card {
+    background: #EF6421;
+    opacity: 90%;
+    border: 2px solid #EF6421;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden-menu{
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 125%;
+    padding: 20px;
+}
+
+.border {
+    border-bottom: 1px solid white;
+}
+
+.card {
+    position: relative;
+    top: 40px;
+}
+
+#icon {
+    width: 30px;
+    height: 30px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+#um{
+    display: none;
+}
+
+#dois{
+    display: none;
+}
+
+#tres{
+    display: none;
+}
+
+#quatro{
+    display: none;
+}
+
+#cinco{
+    display: none;
 }

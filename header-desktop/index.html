@@ -1,61 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <script src="main.js" defer></script>
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Página Inicial</title>
 </head>
 
 <body>
-    <header class="container">
-        <img class = "logo" src="assets/logo.png" alt="logo extendido na horizontal">
-            <div id = "container-menu">
-                <div class="bars">
-                    <label class = "menu" for="admissão">admissão</label>
-                    <button data-btn class ="hint"></button>
-                    <div id = "cards-1">
-                    </div>
+    <header id ="header">
+        <a id="home" href="#" class="active"><img id="logo" src="assets/logo.png" alt="logo da germinare em tema branco"></a>
+        <div class="container-menu">
+            <div class="container">
+                <a class="text" href="#" onmouseenter="abrirCards(this)" onmouseout="fechaCards(this)">admissão</a>
+                <div id ="um" class ="card">
+                    <a class = "hidden-menu border" href="#">Resultado</a>
+                    <a class = "hidden-menu" href="#">Etapas</a>
                 </div>
-
-                <div class="bars">
-                    <label class = "menu" for="acadêmico">acadêmico</label>
-                    <button data-btn class ="hint"></button>
-                    <div id = "cards-2">
-                    </div>
-                </div>
-
-                <div class="bars">
-                    <label class = "menu" for="parcerias">parcerias</label>
-                    <button data-btn class ="hint"></button>
-                    <div id = "cards-3">
-                    </div>
-                </div>
-
-                <div class="bars">
-                    <label class = "menu" for="sobre nós">sobre nós</label>
-                    <button data-btn class ="hint"></button>
-                    <div id = "cards-4">
-                    </div>
-                </div>
-
-                <div class="bars">
-                    <label class = "menu" for="contato">contato</label>
-                    <button data-btn class ="hint"></button>
-                    <div id = "cards-5">
-                    </div>
-                </div>
-                <img class = "icon" src="assets/icone.png" alt="icone de usuário">
             </div>
+
+            <div class="container">
+                <a   class="text" href="#" onmouseover="abrirCardss(this)" onmouseout="fechaCardss(this)">acadêmico</a>
+                <div id ="dois" class ="card">
+                    <a class = "hidden-menu border" href="#">matérias de gestão</a>
+                    <a class = "hidden-menu border" href="#">academias</a>
+                    <a class = "hidden-menu border" href="#">congresso de marcas</a>
+                    <a class = "hidden-menu" href="#">pós-curso</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <a class="text" href="#" onmouseover="abrirCardsss(this)" onmouseout="fechaCardsss(this)">parcerias</a>
+                <div id ="tres" class ="card">
+                    <a class = "hidden-menu border" href="#">parceiros</a>
+                    <a class = "hidden-menu border" href="#">estágios</a>
+                    <a class = "hidden-menu" href="#">programa de supervisores</a>
+                </div>
+            </div>
+
+                <div class="container">
+                    <a class="text" href="#" onmouseover="abrirCardssss(this)" onmouseout="fechaCardssss(this)">sobre nós</a>
+                    <div id ="quatro" class ="card">
+                        <a class = "hidden-menu border" href="#">nossas origens</a>
+                        <a class = "hidden-menu" href="#">nossa missão</a>
+                    </div>
+                </div>
+
+            <div class="container">
+                <a class="text" href="#" onmouseover="abrirCardsssss(this)" onmouseout="fechaCardsssss(this)">contato</a>
+                <div id ="cinco" class ="card">
+                    <a class = "hidden-menu border" href="#">fale conosco</a>
+                    <a class = "hidden-menu " href="#">doações</a>
+                </div>
+            </div>
+        </div>
+        <a ref="#"><img id ="icon" src="assets/icone.png" alt="logo da germinare em tema branco"></a>
     </header>
 </body>
-
 </html>
