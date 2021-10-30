@@ -14,12 +14,15 @@
     <title>Página Inicial</title>
 </head>
 
+
+<!-- ARRUMAR A FUNÇÃO "on" PAAR DEIXAR CLICAVEL O MENU -->
+
 <body>
     <header id ="header">
         <a id="home" href="#" class="active"><img id="logo" src="assets/logo.png" alt="logo da germinare em tema branco"></a>
         <div class="container-menu">
             <div class="container">
-                <a class="text" href="#" onmouseenter="abrirCards(this)" onmouseout="fechaCards(this)">admissão</a>
+                <a class="text" href="#" onmouseenter="abrirCards(this)" onmouseleave ="fechaCards(this)">admissão</a>
                 <div id ="um" class ="card">
                     <a class = "hidden-menu border" href="#">Resultado</a>
                     <a class = "hidden-menu" href="#">Etapas</a>
@@ -27,7 +30,7 @@
             </div>
 
             <div class="container">
-                <a   class="text" href="#" onmouseover="abrirCardss(this)" onmouseout="fechaCardss(this)">acadêmico</a>
+                <a   class="text" href="#" onmouseenter="abrirCardss(this)" onmouseleave= "fechaCardss(this)">acadêmico</a>
                 <div id ="dois" class ="card">
                     <a class = "hidden-menu border" href="#">matérias de gestão</a>
                     <a class = "hidden-menu border" href="#">academias</a>
@@ -37,7 +40,7 @@
             </div>
 
             <div class="container">
-                <a class="text" href="#" onmouseover="abrirCardsss(this)" onmouseout="fechaCardsss(this)">parcerias</a>
+                <a class="text" href="#" onmouseenter="abrirCardsss(this)" onmouseleave ="fechaCardsss(this)">parcerias</a>
                 <div id ="tres" class ="card">
                     <a class = "hidden-menu border" href="#">parceiros</a>
                     <a class = "hidden-menu border" href="#">estágios</a>
@@ -46,7 +49,7 @@
             </div>
 
                 <div class="container">
-                    <a class="text" href="#" onmouseover="abrirCardssss(this)" onmouseout="fechaCardssss(this)">sobre nós</a>
+                    <a class="text" href="#" onmouseenter="abrirCardssss(this)" onmouseleave ="fechaCardssss(this)">sobre nós</a>
                     <div id ="quatro" class ="card">
                         <a class = "hidden-menu border" href="#">nossas origens</a>
                         <a class = "hidden-menu" href="#">nossa missão</a>
@@ -54,7 +57,7 @@
                 </div>
 
             <div class="container">
-                <a class="text" href="#" onmouseover="abrirCardsssss(this)" onmouseout="fechaCardsssss(this)">contato</a>
+                <a class="text" href="#" onmouseenter="abrirCardsssss(this)" onmouseleave ="fechaCardsssss(this)">contato</a>
                 <div id ="cinco" class ="card">
                     <a class = "hidden-menu border" href="#">fale conosco</a>
                     <a class = "hidden-menu " href="#">doações</a>

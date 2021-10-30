@@ -13,25 +13,27 @@
     <title>Portal do Aluno</title>
 </head>
 <body>
-    <main>
+    <main id="main">
         <img src="assets/logo.png" alt="brasão da escola germinare" id="logo">
-        <div id ="container">
+        <form id ="container">
             <input 
             type="text"
             placeholder="Usuário"
             class="input"
             name="user"
-            id="user">
+            id="user"
+            required>
 
             <input 
             type="password"
             placeholder="Senha"
             class="input"
             name="password" 
-            id="password">
+            id="password"
+            required>
 
-            <button id="btn" type="submit">Entrar</button>
-        </div>
+            <a href="./workspace-page.html"><button id="btn" type="button">Entrar</button></a>
+        </form>
     </main>
 </body>
 </html>
