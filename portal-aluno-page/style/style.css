@@ -1,0 +1,51 @@
+body {
+    background: #000;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 22px;
+    width: 280px;
+    border: 5px solid #fff;
+    border-radius: 12px;
+}
+
+input::placeholder {
+    font-weight: 800;
+    color: #fff;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+#user {
+    margin-bottom: 10px;
+}
+
+#btn {
+    background: #E5E5E5;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 15px;
+    width: 250px;
+    height: 45px;
+    border: 1px solid #E5E5E5;
+    border-radius: 90px;
+}
