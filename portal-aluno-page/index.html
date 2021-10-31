@@ -12,27 +12,35 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Portal do Aluno</title>
 </head>
-<body>
+<body id ="body">
     <main id="main">
         <img src="assets/logo.png" alt="brasão da escola germinare" id="logo">
         <form id ="container">
-            <input 
-            type="text"
-            placeholder="Usuário"
-            class="input"
-            name="user"
-            id="user"
-            required>
+            <div>
+                <input 
+                type="text"
+                placeholder="Usuário"
+                class="input"
+                name="user"
+                id="user"
+                required>
+                <img src="assets/user-icon.png" alt="icone de usuário" class="icon">
+            </div>
 
-            <input 
-            type="password"
-            placeholder="Senha"
-            class="input"
-            name="password" 
-            id="password"
-            required>
+            <div>
+                <input 
+                type="password"
+                placeholder="Senha"
+                class="input"
+                name="password" 
+                id="password"
+                required>
+                <img src="assets/password-icon.png" alt="icone de senha" class="icon">
+            </div>
 
-            <a href="./workspace-page.html"><button id="btn" type="button">Entrar</button></a>
+            <form action="./workspace-page.html" method="get">
+                <button id="btn" type="submit">Entrar</button>
+            </form>
         </form>
     </main>
 </body>
