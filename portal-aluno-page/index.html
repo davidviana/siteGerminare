@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
+    <script src="main.js" defer></script>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Portal do Aluno</title>
 </head>
@@ -24,7 +25,7 @@
                 name="user"
                 id="user"
                 required>
-                <img src="assets/user-icon.png" alt="icone de usuário" class="icon">
+                <img src="assets/user-icon.png" alt="icone de usuário" id="icon">
             </div>
 
             <div>
@@ -35,11 +36,11 @@
                 name="password" 
                 id="password"
                 required>
-                <img src="assets/password-icon.png" alt="icone de senha" class="icon">
+                <img src="assets/open.png" alt="icone de usuário" id="icon-eye" onclick="mostrarSenha()">
             </div>
 
             <form action="./workspace-page.html" method="get">
-                <button id="btn" type="submit">Entrar</button>
+                <button id="btn" type="button" onclick="Valida()">Entrar</button>
             </form>
         </form>
     </main>

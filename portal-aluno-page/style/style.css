@@ -1,5 +1,5 @@
 #body {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/main.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/main-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
 #container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     margin-top: 30px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 input::placeholder {
-    font-weight: 800;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -48,6 +48,7 @@ input::placeholder {
 
 #user {
     margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 #btn {
@@ -62,8 +63,45 @@ input::placeholder {
     margin-top: 30px;
 }
 
-/*WORKSPACE*/
+#icon {
+    width: 20px;
+    height: 22px;
+    margin-left: -40px;
+}
 
+#icon-eye {
+    margin-left: -50px;
+}
+
+
+
+@media only screen and (min-width:769px) {
+    #body{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/main-desk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .input{
+        font-size: 30px;
+        width: 400px;
+        border-radius: 50px;
+    }
+    
+    
+    #btn {
+        font-size: 25px;
+        width: 300px;
+        height: 45px;
+    }
+}
+
+
+
+
+/*WORKSPACE*/
+/*RECONSTRUIR USANDO O DISPLAY GRID*/
 #header {
     display: flex;
     flex-direction: row;
@@ -76,12 +114,6 @@ input::placeholder {
 
 #body-container {
     background: #1f1f1f;
-}
-
-.icon {
-    width: 20px;
-    height: 22px;
-    margin-left: -40px;
 }
 
 #main-container {
@@ -127,4 +159,7 @@ input::placeholder {
 #title {
     padding-left: 20px;
     margin: auto 0;
+}
+
+@media only screen and (min-width:769px) {
 }
