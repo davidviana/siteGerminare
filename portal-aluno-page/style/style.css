@@ -1,5 +1,5 @@
 #body {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/main-mobile.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/portal-aluno-img/main-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -73,11 +73,20 @@ input::placeholder {
     margin-left: -50px;
 }
 
+/*classes para validação*/
+.correct {
+    border:1px ;
+}
+
+.incorrect {
+    border:1px ;
+}
+/*classes para validação*/
 
 
 @media only screen and (min-width:769px) {
     #body{
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/main-desk.png);
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/portal-aluno-img/main-desk.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -89,77 +98,9 @@ input::placeholder {
         border-radius: 50px;
     }
     
-    
     #btn {
         font-size: 25px;
         width: 300px;
         height: 45px;
     }
-}
-
-
-
-
-/*WORKSPACE*/
-/*RECONSTRUIR USANDO O DISPLAY GRID*/
-#header {
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    border-bottom: 5px solid #fff;
-}
-
-#body-container {
-    background: #1f1f1f;
-}
-
-#main-container {
-    display: block;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 40px;
-}
-
-.icons{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-}
-
-.label {
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    text-align: center;
-}
-
-.imagem{
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    margin: 25px;
-}
-
-#logos {
-    width: 52px;
-    height: 48px;
-    padding: 20px;
-}
-
-#title {
-    padding-left: 20px;
-    margin: auto 0;
-}
-
-@media only screen and (min-width:769px) {
 }

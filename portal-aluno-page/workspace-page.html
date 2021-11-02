@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <title>Acesso</title>
-</head>
-<body id ="body-container">
-    <header id="header">
-        <img id="logos" src="assets/logo.png" alt="logo">
-        <p id="title">Olá, professor!</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+        <title>Portal do Aluno</title>
+    </head>
+
+<body id="body-container">
+    <header class="o-header">
+        <a href="#"><img src="assets/acesso-img/brasão.png" alt="logo germinare" class="logo"></a>
+        <p class="text">Olá, professor!</p>
     </header>
-    <main id="main-container">
-        <div class="container-icon">
-            <div class="row">
-                <div class="icons">
-                    <a href="https://dliportal.zbra.com.br/Login.aspx?key=Germinare" target="_blank"><img class="imagem" src="assets/book-icon.png" alt="icone de biblioteca"></a>
-                    <p class="label">biblioteca</p>
-                </div>
-    
-                <div class="icons">
-                    <a href="https://hcm19.sapsf.com/login?company=institutog#/login" target="_blank"><img class="imagem" src="assets/avv-icon.png" alt="icone da avv"></a>
-                    <p class="label">avv</p>
-                </div>
+
+    <aside class="o-aside">
+        <div id ="container">
+            <p class="text title">Olá, professor!</p>
+            <a href="#"><img src="assets/acesso-img/brasão-desk.png" alt="logo germinare" class="logo"></a>
+        </div>
+    </aside>
+
+    <main class="o-main">
+        <div class="row">
+            <div class="card">
+                <a href="#"><img src="assets/acesso-img/icon/book-icon.png" alt="logo" class="logos"></a>
+                <p>Biblioteca</p>
             </div>
 
-            <div class="row">
-                <div class="icons">
-                    <a href="https://portal.sophia.com.br/SophiA_44/Acesso.aspx?escola=5535" target="_blank"><img class="imagem" src="assets/checklist-icon.png" alt="icone do sophia escolar"></a>
-                    <p class="label">sophia escolar</p>
-                </div>
-    
-                <div class="icons">
-                    <a href="https://app.arvore.com.br/login" target="_blank"><img class="imagem" src="assets/read-icon.png" alt="icone da árvore de livros"></a>
-                    <p class="label">árvore de livros</p>
-                </div>
+            <div class="card">
+                <a href="#"><img src="assets/acesso-img/icon/avv-icon.png" alt="logo" class="logos"></a>
+                <p>AVV</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <a href="#"><img src="assets/acesso-img/icon/checklist-icon.png" alt="logo" class="logos"></a>
+                <p>SophiA Escolar</p>
             </div>
 
-            <div class="row">
-                <div class="icons">
-                    <a href="#" target="_blank"><img class="imagem" src="assets/phone-icon.png" alt="icone de contatos da TI"></a>
-                    <p class="label">contatos da ti</p>
-                </div>
-    
-                <div class="icons">
-                    <a href="#" target="_blank"><img class="imagem" src="assets/calendar-icon.png" alt="icone de calendário"></a>
-                    <p class="label">calendário</p>
-                </div>
+            <div class="card">
+                <a href="#"><img src="assets/acesso-img/icon/read-icon.png" alt="logo" class="logos"></a>
+                <p>Árvore de Livros</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <a href="#"><img src="assets/acesso-img/icon/phone-icon.png" alt="logo" class="logos"></a>
+                <p>Contatos TI</p>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="assets/acesso-img/icon/calendar-icon.png" alt="logo" class="logos" id="calendar"></a>
+                <p>Calendário</p>
             </div>
         </div>
     </main>
