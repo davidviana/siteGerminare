@@ -10,6 +10,10 @@ body {
     "main main main";
 }
 
+a{
+    text-decoration: none;
+}
+
 .o-header, .o-aside, .o-main {
     color: #fff;
 }
@@ -76,6 +80,7 @@ body {
 
 .p{
     margin-top: 20px;
+    color: #fff;
 }
 
 .logos {
@@ -104,9 +109,6 @@ body {
     background: #fff;
 }
 
-a{
-    text-decoration: none;
-}
 
 @media only screen and (min-width:769px) {
     body {
@@ -161,6 +163,7 @@ a{
     }
 
     .card:hover {
+        
         background: rgb(112, 112, 112);
         transform: scale(1.3);
     }
