@@ -17,6 +17,8 @@
     <main id="main">
         <img src="assets/portal-aluno-img/logo.png" alt="brasão da escola germinare" id="logo">
         <form id ="container">
+            <span id="user-msg" class ="msg">
+            </span>
             <div>
                 <input 
                 type="text"
@@ -24,10 +26,13 @@
                 class="input"
                 name="user"
                 id="user"
+                onfocusout="validaUser()"
                 required>
                 <img src="assets/portal-aluno-img/user-icon.png" alt="icone de usuário" id="icon">
             </div>
 
+            <span id="password-msg" class ="msg">
+            </span>
             <div>
                 <input 
                 type="password"
@@ -35,12 +40,13 @@
                 class="input"
                 name="password" 
                 id="password"
+                onfocusout="validaPassword()"
                 required>
                 <img src="assets/portal-aluno-img/open.png" alt="icone de usuário" id="icon-eye" onclick="mostrarSenha()">
             </div>
 
-            <form action="./workspace-page.html" method="get">
-                <button id="btn" type="button" onclick="Valida()">Entrar</button>
+            <form action="./workspace-page.html" method="get" id="container-btn">
+                <a href="" id="jezus"><button id="btn" type="button" onclick="enterPage()">Entrar</button></a>
             </form>
         </form>
     </main>
