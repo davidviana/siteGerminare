@@ -1,32 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Contato</title>
 </head>
-
 <body>
     <header>
-
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="#" class="active"><img id="logo" src="assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="#" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="#">Resultado</a>
+                        <a class = "hidden-menu" href="#">Etapas</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="#">matérias de gestão</a>
+                        <a class = "hidden-menu" href="#">academias</a>
+                        <a class = "hidden-menu" href="#">congresso de marcas</a>
+                        <a class = "hidden-menu" href="#">pós-curso</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="#">parceiros</a>
+                        <a class = "hidden-menu" href="#">estágios</a>
+                        <a class = "hidden-menu" href="#">programa de supervisores</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class = "hidden-menu" href="#">nossas origens</a>
+                        <a class = "hidden-menu" href="#">nossa missão</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="#">fale conosco</a>
+                        <a class = "hidden-menu" href="#">doações</a>
+                    </div>
+    
+                    <a class="text" href="#">Portal do Aluno</a>
+    
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="#" class="active"><img id="logos" src="assets/logo.png"
+                            alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="#" >admissão</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">Resultado</a>
+                                <a class = "hidden-menu" href="#">Etapas</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">matérias de gestão</a>
+                                <a class = "hidden-menu border" href="#">academias</a>
+                                <a class = "hidden-menu border" href="#">congresso de marcas</a>
+                                <a class = "hidden-menu" href="#">pós-curso</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">parceiros</a>
+                                <a class = "hidden-menu border" href="#">estágios</a>
+                                <a class = "hidden-menu" href="#">programa de supervisores</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">nossas origens</a>
+                                <a class = "hidden-menu" href="#">nossa missão</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#">contato</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">fale conosco</a>
+                                <a class = "hidden-menu" href="#">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"><img src="assets/icone.png" alt="icone usuário" id="icone"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
     </header>
 
     <main>
         <div id="title">
-            <p>FAÇA UMA DOAÇÃO E</p>
-            <p>AJUDE A FINANCIAR NOSSO PROJETO</p>
-            <button>SAIBA MAIS</button>
+            <div class="donate-text">
+                <p>FAÇA UMA DOAÇÃO E</p>
+                <p style="font-weight: 500; font-size: 25px;">AJUDE A FINANCIAR NOSSO PROJETO</p>
+            </div>
+            <button class="btn-mais">SAIBA MAIS</button>
         </div>
 
-        <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Enviar</button>
+        <form id="form">
+            <h1 class="title-form">FORMULÁRIO DE CONTATO</h1>
+            <input 
+            type="text"
+            class="input"
+            placeholder="SEU NOME (OBRIGATÓRIO)">
+
+            <input 
+            type="text"
+            class="input"
+            placeholder="SEU EMAIL (OBRIGATÓRIO)">
+
+            <input 
+            type="text"
+            class="input"
+            placeholder="ASSUNTO">
+
+            <textarea 
+            class="input"
+            cols="30" 
+            rows="10"
+            placeholder="SUA MENSAGEM..."></textarea>
+            <button class="btn">Enviar</button>
         </form>
 
         <div id="title-page">
@@ -37,32 +173,46 @@
                 Entre em contato pelos nossos canais de comunicação.
             </p>
 
-            <div>
-                <p>
-                    Informações pedagógicas da Escola Germinare
-                    comunicacao@germinare.org.br
+            <div class="container-fale">
+                <div class="meios-de-contato">
+                    <p>
+                        Informações pedagógicas da Escola Germinare
+                        comunicacao@germinare.org.br
+                    </p>
+    
+                    <p>
+                        Informações sobre Doações e Apoio para a Escola Germinare
+                        instituto@germinare.org.br
+                    </p>
+    
+                    <p>
+                        Contato Imprensa e Relações Institucionais
+                        instituto@germinare.org.br
+                    </p>
+    
+                    <p>
+                        Contato Processo de Admissão
+                        admissao@germinare.org.br
+                    </p>
+    
+                    <p>
+                        Ouvidoria
+                        ouvidoria@germinare.org.br
+                    </p>
+                </div>
 
-                    Informações sobre Doações e Apoio para a Escola Germinare
-                    instituto@germinare.org.br
-
-                    Contato Imprensa e Relações Institucionais
-                    instituto@germinare.org.br
-
-                    Contato Processo de Admissão
-                    admissao@germinare.org.br
-
-                    Ouvidoria
-                    ouvidoria@germinare.org.br
-                </p>
-
-                <p>
-                    Canal de Ética
-                    Como forma de amparar colaboradores, clientes e fornecedores em situações de exposição a falhas
-                    éticas ou práticas e comportamentos inadequados, disponibilizamos o canal de ética da J&F para a
-                    realização de relatos de forma anônima e segura.
-                    Ao acessar a plataforma do Compliance do Grupo J&F, preencha as informações necessárias e marque
-                    "Escola Germinare" como local de relato. A área responsável tratará as denúncias individualmente!
-                </p>
+                <div class="etica">
+                    <h2>Canal de Ética</h2>
+                    <p>
+                        Como forma de amparar colaboradores, clientes e fornecedores em situações de exposição a falhas
+                        éticas ou práticas e comportamentos inadequados, disponibilizamos o canal de ética da J&F para a
+                        realização de relatos de forma anônima e segura.
+                    </p>
+                    <p>
+                        Ao acessar a plataforma do Compliance do Grupo J&F, preencha as informações necessárias e marque
+                        "Escola Germinare" como local de relato. A área responsável tratará as denúncias individualmente!
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -75,30 +225,41 @@
             </p>
         </div>
 
-        <div>
-            <div>
-                <p></p>
+        <div class="container-doar">
+            <div class="doacao">
+                <p>
+                    Faça sua doação direto do seu celular através do PicPay, usando seu cartão de crédito ou saldo no aplicativo.
+                </p>
+                <img src="" alt="">
+            </div>
+
+            <div class="doacao">
+                <p>
+                    Caso queira doar mensalmente, procure por @doegerminare e faça sua contribuição mensal, a partir de R$10,00/mês.
+                </p>
                 <img src="" alt="">
             </div>
 
             <div>
-                <p></p>
-                <img src="" alt="">
-            </div>
+                <p>
+                    Caso prefira, você pode fazer uma doação diretamente na conta corrente da escola. Para isso, entre em contato através do e-mail:
+                </p>
 
-            <div>
-                <p></p>
-                <img src="" alt="">
+                <p>instituto@germinare.org.br</p>
+                <p>
+                    No caso de doações de Pessoa Jurídica, pedimos a gentileza de nos contatar através do e-mail mencionado acima.
+
+                </p>
             </div>
         </div>
     </main>
 
     <footer id="footer">
         <div id ="social">
-            <a href="https://www.instagram.com/escolagerminare/"><img src="assets/Instagram.png" alt="logo do instagram" class ="logo"></a>
-            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"><img src="assets/YouTube.png" alt="logo do youtube" class ="logo"></a>
-            <a href="https://www.linkedin.com/company/instituto-germinare?trk=top_nav_home"><img src="assets/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
-            <a href="https://www.facebook.com/germinareoficial"><img src="assets/Facebook.png" alt="logo do facebook" class ="logo"></a>
+            <a href="https://www.instagram.com/escolagerminare/"><img src="assets/img/Instagram.png" alt="logo do instagram" class ="logo"></a>
+            <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg"><img src="assets/img/YouTube.png" alt="logo do youtube" class ="logo"></a>
+            <a href="https://www.linkedin.com/company/instituto-germinare?trk=top_nav_home"><img src="assets/img/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+            <a href="https://www.facebook.com/germinareoficial"><img src="assets/img/Facebook.png" alt="logo do facebook" class ="logo"></a>
         </div>
         <div id ="contact">
             <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
