@@ -116,6 +116,7 @@ body {
     .desktop-container {
         width: 100%;
         position: fixed;
+        z-index: 100;
         top:0;
         left: 0;
     }
@@ -400,7 +401,7 @@ body {
 
 @media only screen and (min-width: 769px) {
     #title {
-        height: 600px;
+        height: 500px;
     }
 
     .btn-mais {

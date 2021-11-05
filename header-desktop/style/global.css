@@ -113,3 +113,7 @@ body {
 #cinco{
     display: none;
 }
+
+#nav {
+    display: flex;
+}
