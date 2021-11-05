@@ -115,11 +115,14 @@ body {
 
     .desktop-container {
         width: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
     }
 
     .topnav {
         background: #000;
-        height: 216px;
+        height: 80px;
     }
 
     #nav-container {
@@ -222,6 +225,12 @@ body {
     flex-direction: column;
 }
 
+.donate {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .btn-mais {
     display: block;
     margin: auto;
@@ -253,7 +262,7 @@ body {
     border: 1px solid #000;
     border-radius: 10px;
     padding: 15px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .title-form {
@@ -293,10 +302,25 @@ body {
 
 .title {
     color: #4335E7;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
+    margin: 10px;
+}
+
+.title {
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #4335E7;
+    width: 155px;
+    left: 0px;
+    bottom:0;
+    top: 40px;
 }
 
 .sub-text {
@@ -320,17 +344,18 @@ body {
     font-size: 10px;
     color: #fff;
     padding: 0 10px;
+    margin-bottom: 50px;
 }
 
 .sub-title {
-    text-align: center;
+    text-align: right;
 }
 
 .donate-text {
-    text-align:justify ;
+    text-align:left ;
     color: #fff;
-    padding: 0 10px;
-    font-size: 8px;
+    padding: 5px 10px;
+    font-size: 9px;
 }
 
 .p {
@@ -338,18 +363,26 @@ body {
 }
 
 .container-doar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #EF6421;
-    padding: 15px;
+    padding: 30px 20px;
 }
 
 .doacao {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #fff;
+    width: 125px;
+    height: 250px;
     border-radius: 7px;
     background: #fff;
     margin-bottom: 10px;
     color: #000;
     padding: 10px 30px;
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
 }
 
@@ -357,7 +390,32 @@ body {
     display: block;
     margin: 0 auto;
     width: auto;
-    height: 80px;
+    height: 120px;
+    margin-top: 15px;
+}
+
+.orange{
+    background: #EF6421;
+}
+
+@media only screen and (min-width: 769px) {
+    #title {
+        height: 600px;
+    }
+
+    .btn-mais {
+        transform: scale(1.5);
+    }
+
+    .container-doar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .doacao {
+        transform: scale(1.1);
+        margin: auto;
+    }
 }
 
 /*FOOTER*/
