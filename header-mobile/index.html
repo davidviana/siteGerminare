@@ -9,7 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <script src="main.js" defer></script>
     <title>Página Inicial</title>
 </head>
@@ -20,36 +20,35 @@
             <a id="home" href="#" class="active"><img id="logo" src="assets/logo.png"
                     alt="logo da germinare em tema branco"></a>
             <div id="myLinks">
-
-                <a class="text" href="#" onclick="abrirCardsFi()">admissão</a>
-                <div id ="card-first">
+                <a class="text" href="#" onclick="abrirCards()">admissão</a>
+                <div class ="card">
                     <a class = "hidden-menu" href="#">Resultado</a>
                     <a class = "hidden-menu" href="#">Etapas</a>
                 </div>
 
-                <a class="text" href="#" onclick="abrirCardsSe()">acadêmico</a>
-                <div id ="card-second">
+                <a class="text" href="#" onclick="abrirCards(this)">acadêmico</a>
+                <div class ="card">
                     <a class = "hidden-menu" href="#">matérias de gestão</a>
                     <a class = "hidden-menu" href="#">academias</a>
                     <a class = "hidden-menu" href="#">congresso de marcas</a>
                     <a class = "hidden-menu" href="#">pós-curso</a>
                 </div>
 
-                <a class="text" href="#" onclick="abrirCardsTh()">parcerias</a>
-                <div id ="card-third">
+                <a class="text" href="#" onclick="abrirCards(this)">parcerias</a>
+                <div class ="card">
                     <a class = "hidden-menu" href="#">parceiros</a>
                     <a class = "hidden-menu" href="#">estágios</a>
                     <a class = "hidden-menu" href="#">programa de supervisores</a>
                 </div>
 
-                <a class="text" href="#" onclick="abrirCardsFo()">sobre nós</a>
-                <div id ="card-fourth">
+                <a class="text" href="#" onclick="abrirCards(this)">sobre nós</a>
+                <div class ="card">
                     <a class = "hidden-menu" href="#">nossas origens</a>
                     <a class = "hidden-menu" href="#">nossa missão</a>
                 </div>
 
-                <a class="text" href="#" onclick="abrirCardsFiv()">contato</a>
-                <div id ="card-five">
+                <a class="text" href="#" onclick="abrirCards(this)">contato</a>
+                <div class ="card">
                     <a class = "hidden-menu" href="#">fale conosco</a>
                     <a class = "hidden-menu" href="#">doações</a>
                 </div>
@@ -57,8 +56,8 @@
                 <a class="text" href="#">Portal do Aluno</a>
 
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="abrirCards()">
-                <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class="icon" onclick="menuHamburger(this)">
+                <i id="hamgurber-menu" class="fa fa-bars"></i>
             </a>
         </div>
     </div>
