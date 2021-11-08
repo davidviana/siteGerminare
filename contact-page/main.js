@@ -52,10 +52,11 @@ function abrirCardsFiv() {
     }
 }
 
-$(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-        $('.navbar').css("background-url", "dist/img/logo1.png")
-    } else {
-        $('.navbar').css("background-url", "dist/img/logo2.png")
+$(window).on('scroll', function(){
+    if($(window).scrollTop()){
+        $('nav').addClass('color');
+        $('#image').attr('src', 'http://1.bp.blogspot.com/-SAd3nVaqjlE/Tzci2PpZGLI/AAAAAAAAPx4/erFXdQl5MfY/s1600/facebook-wallpaper-celular-papeis+(16).gif');
+    }else{
+        $('nav').removeClass('color');
     }
-});
+})
