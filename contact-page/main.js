@@ -52,11 +52,10 @@ function abrirCardsFiv() {
     }
 }
 
-$(window).on('scroll', function(){
-    if($(window).scrollTop()){
-        $('header').addClass('color');
-        $('#image').attr('src', 'http://1.bp.blogspot.com/-SAd3nVaqjlE/Tzci2PpZGLI/AAAAAAAAPx4/erFXdQl5MfY/s1600/facebook-wallpaper-celular-papeis+(16).gif');
-    }else{
-        $('header').removeClass('color');
+const iframes = document.querySelectorAll('iframe');
+
+function themeDark() {
+    for (i = 0; i < iframes.length; i++) {
+    iframes[i].classList.add('is-dark');
     }
-})
+}

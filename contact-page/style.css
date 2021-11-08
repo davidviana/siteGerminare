@@ -1,4 +1,7 @@
 /*HEADER*/
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Montserrat";
     margin: auto;
@@ -413,6 +416,14 @@ body {
     background: #EF6421;
 }
 
+.is-dark {
+    filter: invert(80%);
+}
+
+.seta {
+    display: none;
+}
+
 @media only screen and (min-width: 769px) {
     #title {
         height: 500px;
@@ -538,6 +549,40 @@ body {
     .donate-text {
         font-size: 20px;
         margin: 60px;
+    }
+
+    .seta {
+        display: block;
+        margin: auto;
+        width: 50px;
+        height: 40px;
+        padding: 50px;
+        animation: pulse 0.7s infinite;
+        animation-direction: alternate;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+    }
+
+    @-webkit-keyframes pulse {
+        0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+        }
+        100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+        }
+    }
+    
+    @keyframes pulse {
+        0% {
+        transform: scale(1);
+        filter: brightness(100%);
+        }
+        100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+        }
     }
 }
 
