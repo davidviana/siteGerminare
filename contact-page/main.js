@@ -54,9 +54,9 @@ function abrirCardsFiv() {
 
 $(window).on('scroll', function(){
     if($(window).scrollTop()){
-        $('nav').addClass('color');
+        $('header').addClass('color');
         $('#image').attr('src', 'http://1.bp.blogspot.com/-SAd3nVaqjlE/Tzci2PpZGLI/AAAAAAAAPx4/erFXdQl5MfY/s1600/facebook-wallpaper-celular-papeis+(16).gif');
     }else{
-        $('nav').removeClass('color');
+        $('header').removeClass('color');
     }
 })

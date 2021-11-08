@@ -223,7 +223,7 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(assets/backgrounds/risos.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: max-content;
     display: flex;
     flex-direction: column;
 }
@@ -449,7 +449,7 @@ body {
     }
 
     .textarea {
-        height: 4000px;
+        height: 400px;
     }
 
     .btn {
@@ -498,29 +498,29 @@ body {
         background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(assets/backgrounds/escola.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 800px;
+        height: max-content;
     }
 
     .meios-de-contato {
-        font-size: 30px;
-        margin-left: 60px;
-        margin-right: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 30px;
+        margin-left: 60px;
+        margin-right: 10px;
     }
 
     .container-doar{
         display: flex;
         flex-direction: row;
-        transform: scale(1.1);
         margin-bottom: 30px;
+        transform: scale(1.1);
     }
 
     .doacao {
-        transform: scale(1.1);
         margin: auto;
+        transform: scale(1.1);
     }
 
     .title::before {
