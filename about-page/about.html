@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="main.js"></script>
+    <title>Sobre Nós</title>
+</head>
+    <body>
+        <header id ="header">
+            <div class="mobile-container">
+            <div class="topnav">
+                <a href="#" class="active"><img id="logo" src="assets/logo.png"
+                        alt="logo da germinare em tema branco"></a>
+                <div id="myLinks">
+                    <a class="text" href="#" onclick="abrirCardsFi(this)">admissão</a>
+                    <div id ="card-first">
+                        <a class = "hidden-menu" href="#">Resultado</a>
+                        <a class = "hidden-menu" href="#">Etapas</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsSe(this)">acadêmico</a>
+                    <div id ="card-second">
+                        <a class = "hidden-menu" href="#">matérias de gestão</a>
+                        <a class = "hidden-menu" href="#">academias</a>
+                        <a class = "hidden-menu" href="#">congresso de marcas</a>
+                        <a class = "hidden-menu" href="#">pós-curso</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsTh(this)">parcerias</a>
+                    <div id ="card-third">
+                        <a class = "hidden-menu" href="#">parceiros</a>
+                        <a class = "hidden-menu" href="#">estágios</a>
+                        <a class = "hidden-menu" href="#">programa de supervisores</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsFo(this)">sobre nós</a>
+                    <div id ="card-fourth">
+                        <a class = "hidden-menu" href="#">nossas origens</a>
+                        <a class = "hidden-menu" href="#">nossa missão</a>
+                    </div>
+    
+                    <a class="text" href="#" onclick="abrirCardsFiv(this)">contato</a>
+                    <div id ="card-five">
+                        <a class = "hidden-menu" href="#">fale conosco</a>
+                        <a class = "hidden-menu" href="#">doações</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="abrirCards(this)" id="icon-header">
+                    <i  class="fa fa-bars"></i>
+                </a>
+                </div>
+            </div>
+        </header>
+    
+        <header id ="nav-container">
+            <div class="desktop-container">
+            <div class="topnav">
+                <div id="myLink">
+                    <a href="#" class="active"><img id="logos" src="assets/logo.png" alt="logo da germinare em tema branco"></a>
+                    <div class = "coluna">
+                        <a class="text" href="#" >admissão</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">Resultado</a>
+                                <a class = "hidden-menu" href="#">Etapas</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#" >acadêmico</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">matérias de gestão</a>
+                                <a class = "hidden-menu border" href="#">academias</a>
+                                <a class = "hidden-menu border" href="#">congresso de marcas</a>
+                                <a class = "hidden-menu" href="#">pós-curso</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#">parcerias</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">parceiros</a>
+                                <a class = "hidden-menu border" href="#">estágios</a>
+                                <a class = "hidden-menu" href="#">programa de supervisores</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#">sobre nós</a>
+                        <div class="barra">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">nossas origens</a>
+                                <a class = "hidden-menu" href="#">nossa missão</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="coluna">
+                        <a class="text" href="#">contato</a>
+                        <div class="barra orange">
+                            <div class ="card">
+                                <a class = "hidden-menu border" href="#">fale conosco</a>
+                                <a class = "hidden-menu" href="#">doações</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="title">
+                <div class="container-text">
+                    <p class="primeiro">nossa missão</p>
+                    <p class="segundo">é formar jovens</p>
+                    <p class="terceiro">administradores</p>
+                    <p class="quarto">e cidadãos</p>
+                </div>
+            </div>
+
+            <div class="container-origem">
+                <div>
+                    <h1 class="title-origens">nossas origens</h1>
+                    <div class="background">
+                        <p class="subtitle-origens">nossas <span style="color: #EF6421;">origens</span></p>
+                    </div>
+                </div>
+                <div>
+                    <h1>a escola germinare nasceu em <span style="color: #EF6421;">setembro</span> de <span style="color: #EF6421;">2009</span></h1>
+                    <p class="words">
+                        Em 2009, o conjunto de valores e ações compartilhados pela foram J&F Investimentos foram consolidados sob a figura do Instituto Germinare, com o back-ground de um grupo empresarial sólido, que tem na responsabilidade social uma de suas marcas. Desde a criação do projeto, outras empresas estão se tornando apoiadoras desta iniciativa social, que visa transformar a vida de crianças e adolescentes através da educação.
+                    </p>
+
+                    <p class="words">
+                        Em 2010, o Instituto inaugurou a sua Escola Germinare, que oferece Ensino Fundamental II e Ensino Médio, e está localizada em São Paulo, em um terreno de uma das empresas da J&F Investimentos com 9233,67m², sendo 6359,44m² de área construída e 2874,23m² de área livre.
+                    </p>
+
+                    <p class="words">
+                        Com o compromisso de oferecer alta qualidade de ensino para jovens potenciais, nosso objetivo é formar de maneira prática e efetiva administradores de empresas e gestores de negócios, que serão os líderes do futuro. Assim, o grande ideal é formar um grupo de empresários, juntamente com a sociedade, para que juntos possamos ampliar este projeto e desta forma dar a oportunidade para que mais e mais jovens tenham acesso a este projeto acadêmico diferenciado.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div id ="social">
+                <a href="https://www.instagram.com/escolagerminare/" target="_blank"><img src="assets/img/Instagram.png" alt="logo do instagram" class ="logo"></a>
+                <a href="https://www.youtube.com/channel/UCtfT0wIFhW2jyCMR0ZtBuzg" target="_blank"><img src="assets/img/YouTube.png" alt="logo do youtube" class ="logo"></a>
+                <a href="https://www.linkedin.com/company/instituto-germinare?trk=top_nav_home" target="_blank"><img src="assets/img/Linkedin.png" alt="logo do linkedin" class ="logo"></a>
+                <a href="https://www.facebook.com/germinareoficial" target="_blank"><img src="assets/img/Facebook.png" alt="logo do facebook" class ="logo"></a>
+            </div>
+            <div id ="contact">
+                <p>R. Irineu José Bordon - Vila Jaguara, São Paulo - SP, 05120-060</p>
+                <p>Telefone: (11) 3623-6000 </p>
+                <p>Escola Germinare – Escola de Negócios © 2021</p>
+            </div>
+        </footer>
+    </body>
+</html>
