@@ -302,7 +302,7 @@ body {
     border-bottom: 15px solid #EF6421;
     width: 50px;
     margin-top: 2px;
-    margin-left: -230px;
+    margin-left: -220px;
 }
 
 .background {
@@ -376,6 +376,56 @@ body {
     background-size: cover;
     width: 110px;
     height: 200px;
+}
+
+.governanca {
+    color: #fff;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.title-governanca {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EF6421;
+}
+
+.text-governanca {
+    margin-top: 20px;
+}
+
+.imagem {
+    width: auto;
+    height: 20px;
+    padding: 10px;
+    background: #EF6421;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 3;
+    margin-top: 100px;
+}
+
+.esquerda {
+    transform: rotate(-90deg);
+    margin-top: 100px;
+    margin-left: 275px;
+}
+
+.title-demonstrativos {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.text-demonstrativos {
+    margin: 10px;
+    color: #fff;
 }
 
 .seta{
