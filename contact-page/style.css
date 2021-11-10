@@ -132,6 +132,10 @@ body {
         height: 80px;
     }
 
+    .coluna > a {
+        font-size: 13px;
+    }
+
     #nav-container {
         display: flex;
         justify-content: center;
@@ -146,22 +150,25 @@ body {
     }
 
     .card {
-        display: block;
-        opacity: 0;
+        display: none;
+        max-height:0;
+        flex-direction:column;
         transition: all 0.2s ease-in-out;
         padding: 0 5px;
     }
 
-    .card:hover {
-        opacity: 1;
+    .barra:hover> .card {
+        display: flex;
+        max-height: 1000px;
     }
 
     .barra {
         width: 100px;
-        height: 5px;
+        height: 7px;
         border: none;
         border-radius: 15px;
         background: #4335E7;
+        margin: 2px;
     }
 
     .border {
@@ -179,11 +186,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
-
-    .card {
-        display: flex;
-        flex-direction:column;
     }
 
     .coluna {
@@ -208,7 +210,7 @@ body {
 
     @keyframes background {
         0%{
-            height: 5px;
+            height: 7px;
             position: relative;
             border-radius: 10px;
         }
@@ -242,6 +244,8 @@ a {
 }
 
 .donate-h1 {
+    display: flex;
+    flex-direction: column;
     font-weight: 600; 
     font-size: 25px; 
     margin-top: -10px;
@@ -350,18 +354,23 @@ a {
 .sub-text {
     color: #C4C4C4;
     font-size: 11px;
-    text-align: center;
-    margin: 20px;
+    text-align: left;
+    margin: 15px;
 }
 
 .container-fale {
     color: #000;
+    margin: 10px;
+}
+
+.textos {
+    margin: 20px;
 }
 
 .meios-de-contato {
     color: #fff;
     font-size: 10px;
-    padding: 10px;
+
 }
 
 .etica {
@@ -371,16 +380,15 @@ a {
     padding: 0 10px;
 }
 
-
 .donate-text {
     text-align:left ;
     color: #fff;
     padding: 10px;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .p {
-    margin-bottom: 50px;
+    margin: 20px 10px 20px;
 }
 
 .container-doar {
@@ -443,6 +451,7 @@ a {
 @media only screen and (min-width: 769px) {
     #title {
         height: max-content;
+        width: 100%;
     }
 
     .blur {
@@ -510,7 +519,6 @@ a {
 
     .sub-text {
         font-size: 30px;
-        text-align: left;
     }
 
     .etica {
@@ -518,7 +526,6 @@ a {
         flex-direction: column;
         justify-content: center;
         font-size: 25px;
-        border-left: 2px solid white;
         text-align: right;
         max-width: 50%;
     }
@@ -539,8 +546,9 @@ a {
         justify-content: center;
         align-items: right;
         font-size: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0;
         max-width: 50%;
+        border-right: 4px solid white;
     }
 
     .container-doar{
@@ -561,6 +569,7 @@ a {
 
     .donate-text {
         font-size: 20px;
+        margin-bottom: 50px;
     }
 
     .seta {
