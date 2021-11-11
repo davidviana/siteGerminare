@@ -200,7 +200,7 @@ body {
 
     .barra:hover {
         background: #EF6421;
-        animation: background 0.9s forwards;
+        animation: background 1s forwards;
 
     }
 
@@ -285,10 +285,11 @@ a {
 .donate {
     display: block;
     margin: auto;
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
+    line-height: 125%;
 }
 
 .donate-h1 {
@@ -296,7 +297,7 @@ a {
     flex-direction: column;
     font-weight: 600; 
     font-size: 25px;
-    line-height: 30px;
+    line-height: 125%;
 }
 
 .btn-mais {
@@ -532,8 +533,11 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin: 20px 5% 100px;
+        margin: auto;
+        width: 450px;
+        height: max-content;
+        transform: scale(1.2);
+        margin-bottom: 100px;
     }
 
     .title-form {
@@ -544,7 +548,7 @@ a {
 
 
     .input {
-        width: 50%;
+        width: 70%;
         border: 2px solid #E5E5E5;
         padding: 5px;
         margin-bottom: 15px;
@@ -559,9 +563,8 @@ a {
     }
 
     .btn {
-        width: 50%;
-        padding: 10px;
-        font-size: 20px;
+        width: 300px;
+        font-size: 15px;
     }
 
     .doacao {
@@ -583,19 +586,27 @@ a {
     }
 
     .etica {
-        font-size: 14px;
+        font-size: 20px;
         margin-bottom: 50px;
     }
 
     .meios-de-contato {
-        font-size: 12px;
+        font-size: 15px;
         margin-bottom: 50px;
+    }
+
+    .sub-title {
+        font-size: 20px;
     }
 
     .sub-text {
         font-size: 15px;
         text-align: left;
         margin-left: 30px;
+    }
+
+    .etica > p {
+        font-size: 2vw;
     }
 }
 
