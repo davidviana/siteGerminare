@@ -6,13 +6,13 @@ html{
 body {
     font-family: "Montserrat";
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     background: #1F1F1F;
 }
 
 #header {
-    width:100%;
     display: block;
+    width:100%;
     background-color: #000000;
 }
 
@@ -25,7 +25,8 @@ body {
     background: #1F1F1F;
     text-transform: capitalize;
     font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
 }
 
     #logo {
@@ -37,7 +38,7 @@ body {
     #icon-header {
         font-size: 20px;
         width: auto;
-        height: 21px;
+        height: 3.7vh;
     }
 
 .mobile-container {
@@ -57,12 +58,12 @@ body {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #hamgurber-menu {
     font-size: 30px;
-    padding: 5px 5px ;
+    padding: 5px 5px;
 }
 
 .active {
@@ -81,7 +82,7 @@ body {
 
 .icon {
     width: 36px;
-    height: 36px ;
+    height: 36px;
 }
 
 .hidden-menu{
@@ -112,7 +113,21 @@ body {
     display: none;
 }
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:800px) and (max-width: 1024px) {
+    #header {
+        width: 100vw;
+    }
+
+    .topnav a {
+        font-size: 15px;
+    }
+
+    #icon-header {
+        height: 3.7vh;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
     #header {
         display: none;
     }
@@ -127,7 +142,7 @@ body {
 
     .topnav {
         background: #000;
-        height: 80px;
+        height: 10vh;
     }
 
     .coluna > a {
@@ -138,6 +153,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: scale(1.3);
     }
 
     .hidden-menu {
@@ -160,11 +176,11 @@ body {
         display: flex;
         visibility: visible;
         max-height: 1000px;
-        animation: fadeIn 1s;
-        -webkit-animation: fadeIn 1s;
-        -moz-animation: fadeIn 1s;
-        -o-animation: fadeIn 1s;
-        -ms-animation: fadeIn 1s;
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+        -moz-animation: fadeIn 2s;
+        -o-animation: fadeIn 2s;
+        -ms-animation: fadeIn 2s;
     }
 
     .barra {
@@ -487,10 +503,29 @@ a {
     display: none;
 }
 
-@media only screen and (min-width:321px) and (max-width: 768px) {
+@media only screen and (min-width:800px) and (max-width: 1024px) {
     #title {
-        height: 250px;
+        height: 100vh;
         width: 100%;
+    }
+
+    .donate {
+        line-height: 125%;
+        font-size: 6vw;
+    }
+
+    .donate-h1 {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600; 
+        font-size: 8vw;
+        line-height: 125%;
+    }
+
+    .btn-mais {
+        width: 240px;
+        height: 40px;
+        font-size: 25px;
     }
 
     #form {
@@ -498,7 +533,7 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 20px 5% 20px;
+        margin: 20px 5% 100px;
     }
 
     .title-form {
@@ -507,20 +542,9 @@ a {
         margin-bottom: 20px;
     }
 
-    .donate {
-        line-height: 125%;
-    }
-
-    .donate-h1 {
-        display: flex;
-        flex-direction: column;
-        font-weight: 600; 
-        font-size: 25px;
-        line-height: 125%;
-    }
 
     .input {
-        width: 90%;
+        width: 50%;
         border: 2px solid #E5E5E5;
         padding: 5px;
         margin-bottom: 15px;
@@ -535,8 +559,9 @@ a {
     }
 
     .btn {
-        width: 90%;
-        margin-top: 100px;
+        width: 50%;
+        padding: 10px;
+        font-size: 20px;
     }
 
     .doacao {
@@ -572,22 +597,10 @@ a {
         text-align: left;
         margin-left: 30px;
     }
-
-    .donate-h1 {
-        font-size: 34px; 
-        margin-top: -10px;
-    }
-
-    .donate {
-        color: #fff;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 26px;
-    }
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     #title {
         height: 100vh;
         width: 100%;
@@ -618,6 +631,7 @@ a {
     }
 
     .map {
+        width: 100%;
         height: 600px;
     }
 
