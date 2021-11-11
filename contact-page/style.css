@@ -72,7 +72,7 @@ body {
 }
 
 .topnav a.icon {
-    background: #0E0E58;
+    background: #161692;
     display: block;
     position: absolute;
     right: 0;
@@ -160,11 +160,11 @@ body {
         display: flex;
         visibility: visible;
         max-height: 1000px;
-        animation: fadeIn 0.5s;
-        -webkit-animation: fadeIn 0.5s;
-        -moz-animation: fadeIn 0.5s;
-        -o-animation: fadeIn 0.5s;
-        -ms-animation: fadeIn 0.5s;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        -moz-animation: fadeIn 1s;
+        -o-animation: fadeIn 1s;
+        -ms-animation: fadeIn 1s;
     }
 
     .barra {
@@ -184,7 +184,7 @@ body {
 
     .barra:hover {
         background: #EF6421;
-        animation: background 0.5s forwards;
+        animation: background 0.9s forwards;
 
     }
 
@@ -217,14 +217,12 @@ body {
     @keyframes background {
         0%{
             height: 7px;
-            position: relative;
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
         100% {
-            height: max-content;
-            position: relative;
-            border-radius: 5px;
+            height: 100%;
+            border-radius: 10px;
         }
     }
 
@@ -260,15 +258,18 @@ a {
 }
 
 #title {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(assets/backgrounds/risos.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url(assets/backgrounds/risos.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: max-content;
+    height: 200px;
     display: flex;
     flex-direction: column;
 }
 
 .donate {
+    display: block;
+    margin: auto;
+    font-size: 15px;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -278,8 +279,8 @@ a {
     display: flex;
     flex-direction: column;
     font-weight: 600; 
-    font-size: 25px; 
-    margin-top: -10px;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 .btn-mais {
@@ -329,6 +330,8 @@ a {
     color: #EF6421;
     font-size: 18px;
     text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .input {
@@ -383,6 +386,12 @@ a {
     top: 40px;
 }
 
+.sub-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
 .sub-text {
     color: #C4C4C4;
     font-size: 11px;
@@ -410,6 +419,10 @@ a {
     color: #fff;
     text-align: right;
     padding: 0 10px;
+}
+
+.etica > p {
+    margin-bottom: 10px;
 }
 
 .donate-text {
@@ -445,6 +458,13 @@ a {
     padding: 10px 30px;
     font-size: 11px;
     text-align: center;
+    line-height: 125%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .qr-code{
@@ -467,50 +487,47 @@ a {
     display: none;
 }
 
-.blur {
-    display: block;
-    margin: 50px 0;
-    width: 100%;
-    height: 20px;
-    background: #1F1F1F;
-    filter:blur(4px);
-    -o-filter:blur(4px);
-    -ms-filter:blur(4px);
-    -moz-filter:blur(4px);
-    -webkit-filter:blur(4px);
-}
-
 @media only screen and (min-width:321px) and (max-width: 768px) {
     #title {
-        height: max-content;
+        height: 250px;
         width: 100%;
     }
-    
+
     #form {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        max-width: 300px;
-        height: 400px;
-        transform: scale(1.2);
-        margin-top: -60px;
-        margin-bottom: 100px;
+        flex-direction: column;
+        margin: 20px 5% 20px;
     }
 
     .title-form {
-        font-size: 20px;
+        font-size: 21px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .donate {
+        line-height: 125%;
+    }
+
+    .donate-h1 {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600; 
+        font-size: 25px;
+        line-height: 125%;
     }
 
     .input {
-        width: 270px;
+        width: 90%;
         border: 2px solid #E5E5E5;
         padding: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
-    
+
     .input::placeholder {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .textarea {
@@ -518,7 +535,7 @@ a {
     }
 
     .btn {
-        width: 200px;
+        width: 90%;
         margin-top: 100px;
     }
 
@@ -570,28 +587,27 @@ a {
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
     #title {
-        height: max-content;
+        height: 100vh;
         width: 100%;
     }
 
-    .blur {
-        height: 100px;
-        margin-top: -10px;
-    }
-
     .donate {
-        margin-top: 100px;
-        font-size: 40px;
+        margin-top: 200px;
+        font-size: 60px;
+        line-height: 125%;
     }
 
     .donate-h1 {
-        font-size: 60px;
+        line-height: 125%;
+        font-size: 80px;
     }
 
     .btn-mais {
-        transform: scale(1.5);
+        width: 300px;
+        height: 50px;
+        font-size: 30px;
         transition: all .5s ease-in-out;
     }
 
@@ -601,12 +617,15 @@ a {
         border: 2px solid #EF6421;
     }
 
+    .map {
+        height: 600px;
+    }
+
     #form {
         margin: auto;
         max-width: 450px;
         height: 600px;
         transform: scale(1.2);
-        margin-top: -60px;
         margin-bottom: 200px;
     }
 
@@ -643,12 +662,17 @@ a {
         font-size: 30px;
     }
 
+    .sub-title {
+        font-size: 25px;
+    }
+
     .etica {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 25px;
+        font-size: 20px;
         text-align: right;
+        margin-right: 20px;
         max-width: 50%;
     }
 
@@ -659,7 +683,7 @@ a {
         background-repeat: no-repeat;
         background-size: cover;
         height: max-content;
-        width: 100%;
+        width: 100vw;
     }
 
     .meios-de-contato {
@@ -756,6 +780,7 @@ a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
+    line-height: 20px;
 }
 
 @media only screen and (min-width:769px) {
