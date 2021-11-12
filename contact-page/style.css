@@ -38,7 +38,7 @@ body {
     #icon-header {
         font-size: 20px;
         width: auto;
-        height: 3.7vh;
+        height: max-content;
     }
 
 .mobile-container {
@@ -120,10 +120,6 @@ body {
 
     .topnav a {
         font-size: 15px;
-    }
-
-    #icon-header {
-        height: 3.7vh;
     }
 }
 
@@ -322,6 +318,7 @@ a {
     color: #fff;
     padding: 5px;
     font-weight: 400;
+    font-size: 1vw;
 }
 
 .map {
@@ -385,7 +382,7 @@ a {
     text-align: left;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px;
 }
 
@@ -397,10 +394,10 @@ a {
     content: "";
     position: absolute;
     border-bottom: 2px solid #4335E7;
-    width: 155px;
+    width: 105px;
     left: 0px;
     bottom:0;
-    top: 40px;
+    top: 20px;
 }
 
 .sub-title {
@@ -427,18 +424,18 @@ a {
 
 .meios-de-contato {
     color: #fff;
-    font-size: 10px;
+    font-size: 3vw;
 
 }
 
 .etica {
-    font-size: 10px;
     color: #fff;
     text-align: right;
     padding: 0 10px;
 }
 
 .etica > p {
+    font-size: 3.1vw;
     margin-bottom: 10px;
 }
 
@@ -446,7 +443,7 @@ a {
     text-align:left ;
     color: #fff;
     padding: 10px;
-    font-size: 10px;
+    font-size: 3.1vw;
 }
 
 .p {
@@ -586,7 +583,6 @@ a {
     }
 
     .etica {
-        font-size: 20px;
         margin-bottom: 50px;
     }
 
@@ -606,6 +602,10 @@ a {
     }
 
     .etica > p {
+        font-size: 2vw;
+    }
+
+    .donate-text {
         font-size: 2vw;
     }
 }
@@ -646,6 +646,7 @@ a {
         height: 50px;
         font-size: 30px;
         transition: all .5s ease-in-out;
+        cursor: pointer;
     }
 
     .btn-mais:hover {
@@ -685,6 +686,7 @@ a {
         width: 200px;
         justify-content: center;
         transition: all 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     .btn:hover {
@@ -701,17 +703,21 @@ a {
     }
 
     .sub-title {
-        font-size: 25px;
+        font-size: 2vw;
     }
 
     .etica {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 20px;
         text-align: right;
         margin-right: 20px;
         max-width: 50%;
+    }
+
+    .etica > p {
+        font-size: 1.5vw;
+        line-height: 125%;
     }
 
     .container-fale {
@@ -729,7 +735,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: right;
-        font-size: 20px;
+        font-size: 1.5vw;
         margin: 20px 0;
         max-width: 50%;
         border-right: 4px solid white;
@@ -752,7 +758,7 @@ a {
     }
 
     .donate-text {
-        font-size: 20px;
+        font-size: 1.5vw;
         margin-bottom: 50px;
     }
 
@@ -781,7 +787,7 @@ a {
 
 /*FOOTER*/
 #footer {
-    width: 100%;
+    width: 100vw;
     background: #1C1365;
     padding: 5px;
 }
