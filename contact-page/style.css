@@ -172,11 +172,11 @@ body {
         display: flex;
         visibility: visible;
         max-height: 1000px;
-        animation: fadeIn 2s;
-        -webkit-animation: fadeIn 2s;
-        -moz-animation: fadeIn 2s;
-        -o-animation: fadeIn 2s;
-        -ms-animation: fadeIn 2s;
+        animation: fadeIn 1.3s;
+        -webkit-animation: fadeIn 1.3s;
+        -moz-animation: fadeIn 1.3s;
+        -o-animation: fadeIn 1.3s;
+        -ms-animation: fadeIn 1.3s;
     }
 
     .barra {
@@ -382,7 +382,7 @@ a {
     text-align: left;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 4vw;
     margin: 20px;
 }
 
@@ -393,22 +393,23 @@ a {
 .title::before {
     content: "";
     position: absolute;
-    border-bottom: 2px solid #4335E7;
-    width: 105px;
-    left: 0px;
-    bottom:0;
+    border-bottom: 0.25vh solid #4335E7;
+    width: 20vw;
+    left: 0;
+    bottom: 0;
     top: 20px;
 }
 
 .sub-title {
+    margin-top: 50px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 3vw;
     margin-bottom: 15px;
 }
 
 .sub-text {
     color: #C4C4C4;
-    font-size: 11px;
+    font-size: 2.7vw;
     text-align: left;
     margin: 15px;
 }
@@ -424,7 +425,7 @@ a {
 
 .meios-de-contato {
     color: #fff;
-    font-size: 3vw;
+    font-size: 2.5vw;
 
 }
 
@@ -435,7 +436,7 @@ a {
 }
 
 .etica > p {
-    font-size: 3.1vw;
+    font-size: 2.5vw;
     margin-bottom: 10px;
 }
 
@@ -443,7 +444,7 @@ a {
     text-align:left ;
     color: #fff;
     padding: 10px;
-    font-size: 3.1vw;
+    font-size: 2.7vw;
 }
 
 .p {
@@ -607,6 +608,17 @@ a {
 
     .donate-text {
         font-size: 2vw;
+    }
+
+    .container-doar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doacao {
+        margin: 10px;
     }
 }
 
