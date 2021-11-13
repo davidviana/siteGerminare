@@ -163,6 +163,7 @@ function abrirCardsFiv() {
 
 }(document));
 
+
 function cardDemonstra() {
     var arrow = document.getElementById('seta')
     arrow.style.transform = 'rotate(-180deg)'
@@ -182,3 +183,12 @@ function cardDemonstra() {
     }
 }
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('#logos').attr('src', './assets/logo-pequeno.png');
+        $('#logos').addClass('troca');
+    } else {
+        $('#logos').removeClass('troca');
+        $('#logos').attr('src', './assets/logo.png');
+    }
+});
