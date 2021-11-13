@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.9.1.js" defer></script>
     <script src="main.js" defer></script>
     <title>Sobre Nós</title>
 </head>
@@ -134,7 +135,7 @@
                 <p class="segundo">é formar jovens</p>
                 <p class="terceiro">administradores</p>
                 <p class="quarto">e cidadãos</p>
-                <a href="#form"><img class="seta" src="assets/seta.png" alt="seta para baixo"></a>
+                <a href="#"><img class="seta" src="assets/seta.png" alt="seta para baixo"></a>
             </div>
         </div>
 
@@ -158,15 +159,12 @@
 
                 <p class="words">
                     Em 2010, o Instituto inaugurou a sua Escola Germinare, que oferece Ensino Fundamental II e Ensino
-                    Médio, e está localizada em São Paulo, em um terreno de uma das empresas da J&F Investimentos com
-                    9233,67m², sendo 6359,44m² de área construída e 2874,23m² de área livre.
+                    Médio, e está localizada em São Paulo, em um terreno de uma das empresas da J&F Investimentos.
                 </p>
 
                 <p class="words">
                     Com o compromisso de oferecer alta qualidade de ensino para jovens potenciais, nosso objetivo é
-                    formar de maneira prática e efetiva administradores de empresas e gestores de negócios. Assim, o
-                    grande ideal é formar um grupo de empresários, juntamente com a sociedade, para que seja possível
-                    ampliar este projeto para mais jovens interessados.
+                    formar administradores de empresas e gestores de negócios. Assim, o grande ideal é formar um grupo de empresários e ampliar este projeto para mais jovens interessados.
                 </p>
             </div>
         </div>
@@ -223,88 +221,7 @@
                     <p>
                         DEMOSTRATIVO <br>
                         FINANCEIRO <br>
-                        2010
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2011
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2012
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2013
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2014
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2015
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2016
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2017
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2018
-                    </p>
-                </div>
-
-                <div class="demonstrativos">
-                    <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
-                    <p>
-                        DEMOSTRATIVO <br>
-                        FINANCEIRO <br>
-                        2019
+                        2021
                     </p>
                 </div>
 
@@ -322,8 +239,93 @@
                     <p>
                         DEMOSTRATIVO <br>
                         FINANCEIRO <br>
-                        2021
+                        2019
                     </p>
+                </div>
+
+                <img id="seta" class="seta actived" src="assets/seta.png" alt="seta para baixo" onclick="cardDemonstra(this)">
+
+                <div class="cards-demonstrativos" id="cards-demonstrativos">
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2018
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2017
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2016
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2015
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2014
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2013
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2012
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2011
+                        </p>
+                    </div>
+    
+                    <div class="demonstrativos">
+                        <img src="assets/logo-azul.png" alt="logo azul" class="logo-azul">
+                        <p>
+                            DEMOSTRATIVO <br>
+                            FINANCEIRO <br>
+                            2010
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

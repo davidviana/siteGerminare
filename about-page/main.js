@@ -162,3 +162,23 @@ function abrirCardsFiv() {
     initCarousel();
 
 }(document));
+
+function cardDemonstra() {
+    var arrow = document.getElementById('seta')
+    arrow.style.transform = 'rotate(-180deg)'
+    if(arrow.classList.contains("clicked")){
+        arrow.classList.toggle("clicked","")
+        arrow.style.transform = 'rotate(-360deg)'
+    } else {
+        arrow.classList.add("clicked")
+        arrow.style.transform = 'rotate(-180deg)'
+    }
+
+    var x = document.getElementById("cards-demonstrativos")
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
